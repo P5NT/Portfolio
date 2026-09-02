@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Allenoire";
   src: url("fonts/Allenoire\ Font.otf") format("truetype");
@@ -11,6 +15,11 @@
   --primary-color: #653904;
   --secondary-color: #f5f0c9;
   --third-color: #000000;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -88,7 +97,7 @@ header li {
   border-radius: 300px;
   overflow: hidden;
   display: flex;
-  background-image: url(img/me.jpeg);
+  background-image: url(img/mean.jpeg);
   background-size: cover;
 }
 
@@ -490,8 +499,11 @@ h2 {
 @media (max-width: 480px) {
   /* Header Styling */
   header {
+    width: 100%;
+    box-sizing: border-box;
     flex-direction: row;
     position: fixed;
+    padding: 15px 20px;
   }
 
   .menu-icon {
@@ -510,12 +522,14 @@ h2 {
     position: absolute;
     top: 100%;
     right: 20px;
+    width: auto;
+    box-sizing: border-box;
     flex-direction: column;
     gap: 0;
     background-color: var(--primary-color);
     padding: 10px;
     margin: 0;
-
+    list-style: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
 
@@ -527,46 +541,47 @@ h2 {
     display: flex;
   }
 
-  header:hover ul {
+  /* header:hover ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
+  } */
 
   /* Hero Section Styling */
 
   .hero {
     display: flex;
-    flex-direction: row;
-    min-height: 100vh;
+    /* width: 100%;
+    max-width: 100%; */
+    flex-direction: column;
     box-sizing: border-box;
-    background-color: var(--secondary-color);
     padding-top: 150px;
     padding-bottom: 50px;
-    align-items: center;
-    gap: 100px;
+    /* align-items: center; */
+    gap: 10px;
+    /* text-align: center; */
   }
 
   .person {
-    width: 600px;
-    height: 600px;
-    border-radius: 300px;
+    min-width: 400px;
+    min-height: 500px;
+    border-radius: 50px;
     overflow: hidden;
     display: flex;
-    background-image: url(img/me.jpeg);
+    background-image: url(img/mean.jpeg);
     background-size: cover;
   }
 
   .person img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     object-position: left;
   }
 
   .hero-text {
     max-width: 500px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
   }
 
   .hero-text h1,
@@ -575,7 +590,7 @@ h2 {
   }
 
   .hero h1 {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .hero h2 {
