@@ -1,6 +1,13 @@
+@font-face {
+  font-family: "Allenoire";
+  src: url("fonts/Allenoire\ Font.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --primary-font: Allenoire Free Personal;
-  --secondary-font: Montserrat;
+  --primary-font: "Allenoire", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
   --primary-color: #653904;
   --secondary-color: #f5f0c9;
   --third-color: #000000;
