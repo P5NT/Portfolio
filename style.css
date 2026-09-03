@@ -563,13 +563,14 @@ h2 {
   }
 
   .person {
-    min-width: 350px;
-    min-height: 430px;
+    min-width: 300px;
+    min-height: 380px;
     border-radius: 50px;
     overflow: hidden;
     display: flex;
     background-size: cover;
     margin-top: 10px;
+    margin-right: 0;
   }
 
   .person img {
@@ -580,7 +581,7 @@ h2 {
   }
 
   .hero-text {
-    max-width: 350px;
+    max-width: 300px;
     padding: 0;
   }
 
@@ -590,12 +591,13 @@ h2 {
   }
 
   .hero h1 {
+    font-size: 23px;
     margin-top: 10px;
   }
 
   .hero h2 {
     font-family: var(--secondary-font);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 450;
     margin-bottom: 20px;
   }
@@ -607,7 +609,7 @@ h2 {
 
   .hero p {
     font-family: var(--secondary-font);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     margin: 0;
   }
@@ -646,19 +648,20 @@ h2 {
   }
 
   .about p {
-    max-width: 1000px;
-    font-size: 18px;
-    text-align: justify;
+    max-width: 300px;
+    font-size: 13px;
+    /* text-align: justify; */
+    text-align: center;
   }
 
   .stat {
-    gap: 50px;
+    gap: 20px;
     background-color: var(--primary-color);
     padding: 10px;
   }
 
   .stat p {
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
     color: var(--secondary-color);
   }
@@ -666,7 +669,7 @@ h2 {
   /* Skills Section Styling */
   .skills {
     /* margin-top: 50px; */
-    padding: 80px;
+    padding: 60px;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -706,32 +709,32 @@ h2 {
   .the-skill h3 {
     margin: 0;
     font-family: var(--secondary-font);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
     color: var(--primary-color);
   }
 
   .the-skill img {
-    width: 100px;
+    width: 70px;
     margin: 0;
   }
 
   .rating {
     color: gold;
-    font-size: 15px;
+    font-size: 10px;
     margin: 0;
     letter-spacing: 3px;
   }
 
   .skill-desc {
-    max-width: 300px;
+    max-width: 600px;
     margin-left: 0px;
   }
 
   .skill-desc p {
     font-family: var(--secondary-font);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 10px;
     text-align: center;
   }
 
@@ -747,6 +750,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
   }
 
   .projects h2 {
